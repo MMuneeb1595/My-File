@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings & Method</title>
+</head>
+<body>
+    
+
+    <script>
+        // strings 
+        // single quote string
+        let name = 'John';
+        document.write(name+"<br>"); // John
+        document.write(name[0]+"<br>"); // J
+        document.write(name[1]+"<br>"); // o
+        document.write(name[2]+"<br>"); // h
+        document.write(name[3]+"<br>"); // n
+        // Double quote string
+        let str = "Hello, World!";
+        document.write(str+"<br>");
+        document.write(str.length+"<br>");
+        // thrid quote string
+        let str3 = `Hello, World!`
+        document.write(str3+"<br>");
+        // template literals
+        let name1 = "John";
+        let name2 = 'William';
+        let sentence=`${name1} is friend of ${name2}`
+        document.write(sentence+"<br>");
+        // Escape squence characters
+        let str4 = "Hello, World! \\n \\t \\b \\f \\r";
+        document.write(str4+"<br>");
+        let str5="name ";
+        document.write(str5+"<br>");
+
+        // String Methods 
+        let str6 = "Hello, World!";
+        // IndexOf
+        document.write("the index of world "+str6.indexOf("World")+"<br>"); // 7
+        // LastIndexOf
+        document.write("the Last index of world "+str6.lastIndexOf("World")+"<br>"); //
+        // toUpperCase
+        document.write("Convert to upper case "+str6.toUpperCase()+"<br>"); // HELLO, WORLD!
+        // toLowerCase
+        document.write("Convert to lower case "+str6.toLowerCase()+"<br>"); // hello, world!
+        // Slice
+        document.write("Slice the text "+str6.slice(0,5)+"<br>"); // Hello
+        // Substring
+        document.write("Substring same like slice "+str6.substring(0,5)+"<br>"); // Hello
+        // Replace
+        document.write("Replace world into earth "+str6.replace("World","Earth")+"<br>");
+        // Concate
+        let str7 = "Teacher ";
+        let str8 = "Student";
+        document.write(str7.concat("teaches the ",str8+"<br>")); // Hello, World!
+        document.write(str7+str8+"<br>"); // Hello, World!
+        // Trim
+        let str9 = "   work, Pakistan   ";
+        document.write(str9.trim()+"<br>"); // Hello, World!
+        // Split
+        let str10 = "Hello, World!"
+        document.write(str10.split(",")+"<br>"); // ["Hello", " World!"]
+        // Join
+        let str11 = ["Hello", " pakistan"];
+        document.write(str11.join(",")+"<br>"); // Hello, World!
+        // charAt
+        document.write(str10.charAt(0)+"<br>"); // H
+        // charCodeAt
+        document.write(str10.charCodeAt(2)+"<br>"); // 72
+        //use a For loop for printing a name
+        let name3 = "Imran";
+        for(let i =0; i<name3.length; i++){
+            document.write(name3[i]+"<br>");
+        }
+
+        const newElement = document.createElement("p");
+        newElement.textContent = "new world are come";
+        document.body.appendChild(newElement);
+    </script>
+</body>
+</html>
